@@ -1,5 +1,5 @@
 # aptinstall debian list
-certbot
+#certbot
 colordiff
 cron
 curl
@@ -16,10 +16,11 @@ pipes-sh
 plocate
 ripgrep
 rsync
+shairport-sync
 sudo
 sysstat
 tree
-ufw
+#ufw
 unzip
 unattended-upgrades
 vim
