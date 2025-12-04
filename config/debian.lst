@@ -1,7 +1,7 @@
 # aptinstall debian list
 #certbot
 colordiff
-cron
+#cron
 curl
 duf
 fail2ban
@@ -16,8 +16,7 @@ pipes-sh
 plocate
 ripgrep
 rsync
-shairport-sync
-sudo
+#sudo
 sysstat
 tree
 #ufw
