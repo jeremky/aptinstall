@@ -19,6 +19,7 @@ rsync
 #sudo
 sysstat
 tree
+tty-clock
 #ufw
 unzip
 unattended-upgrades
