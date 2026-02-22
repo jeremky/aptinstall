@@ -1,6 +1,6 @@
 # pkginstall.sh
 
-Script automatisant l'installation et le paramétrage de Debian/Fedora.
+Script automatisant l'installation et le paramétrage de Debian/Ubuntu.
 
 ## Fonctionnalités
 
