@@ -4,7 +4,7 @@ Script automatisant l'installation et le paramétrage de Debian/Ubuntu.
 
 ## Fonctionnalités
 
-- Installe les paquets présents dans le fichier `config/<votre_os>.lst`
+- Installe les paquets présents dans le fichier `config/<votre_os>.cfg`
 
 - Sécurise le serveur SSH et limite l'accès à l'utilisateur par défaut
 
