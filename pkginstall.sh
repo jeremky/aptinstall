@@ -22,7 +22,7 @@ fi
 
 # Config selon la distribution
 dist=$(grep "^ID=" /etc/os-release | cut -d= -f2,2 | tr -d '"')
-list="$(dirname "$0")/config/$dist.lst"
+list="$(dirname "$0")/config/$dist.cfg"
 
 # Installation des paquets
 warning "Installation des paquets..."
