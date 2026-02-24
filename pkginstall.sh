@@ -56,7 +56,7 @@ if [[ -f /etc/fail2ban/jail.d/defaults-debian.conf ]]; then
 fi
 
 # Activation du Firewall (avec désactivation de l'IP v6)
-if [[ -f /usr/sbin/ufw ]]; then
+if [[ -f /usr/sbin/ufw ]] && [[ $ufwenable = "true" ]]; then
   warning "Activation du firewall ufw..."
   if [[ $ufwipv6 = "false" ]]; then
     sed -i "s,IPV6=yes,IPV6=no," /etc/default/ufw
