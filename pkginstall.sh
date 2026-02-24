@@ -25,13 +25,13 @@ dist=$(grep "^ID=" /etc/os-release | cut -d= -f2,2 | tr -d '"')
 list="$(dirname "$0")/config/$dist.cfg"
 
 # Installation des paquets
-warning "Installation des paquets..."
+warning "Mise à jour des paquets..."
 apt update && apt -y full-upgrade
 if [[ -f $list ]]; then
+  warning "Installation des paquets..."
   apt -y install $(cat $list | grep -v '#')
+  message "Paquets installés"
 fi
-fi
-message "Paquets installés"
 
 # Activation de locate
 if [[ -f /usr/bin/locate ]]; then
