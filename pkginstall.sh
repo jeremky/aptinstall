@@ -29,16 +29,18 @@ warning "Installation des paquets..."
 apt update && apt -y full-upgrade
 if [[ -f $list ]]; then
   apt -y install $(cat $list | grep -v '#')
-  # Activation des mises à jour automatiques
-  if [[ -f /usr/bin/unattended-upgrades ]]; then
-    dpkg-reconfigure unattended-upgrades
-  fi
+fi
 fi
 message "Paquets installés"
 
 # Activation de locate
 if [[ -f /usr/bin/locate ]]; then
   updatedb
+fi
+
+# Activation des mises à jour automatiques
+if [[ -f /usr/bin/unattended-upgrades ]] && [[ $unattended = "true" ]]; then
+  dpkg-reconfigure unattended-upgrades
 fi
 
 # Sécurisation de ssh (check sur https://www.ssh-audit.com)
