@@ -12,7 +12,7 @@ if [[ "$USER" != "root" ]]; then
 fi
 
 # Chargement du fichier de config
-cfg="$(dirname "$(realpath "$0")")/pkginstall.cfg"
+cfg="$(dirname "$(realpath "$0")")/debinstall.cfg"
 if [[ ! -f $cfg ]]; then
   error "Fichier $cfg introuvable"
   exit 1
