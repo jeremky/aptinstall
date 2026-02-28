@@ -12,7 +12,7 @@ if [[ "$USER" != "root" ]]; then
 fi
 
 # Chargement du fichier de config
-cfg="$(dirname "$(realpath "$0")")/aptinstall.cfg"
+cfg="$(dirname "$0")/aptinstall.cfg"
 if [[ ! -f $cfg ]]; then
   error "Fichier $cfg introuvable"
   exit 1
